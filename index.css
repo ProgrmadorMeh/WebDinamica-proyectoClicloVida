@@ -16,7 +16,7 @@
 
 #btn-ocultar{
     background: none;
-    background-image: url(heroicons-master/optimized/24/outline/arrow-long-left.svg);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke-width=\'1.5\' stroke=\'black\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M6.75 15.75L3 12m0 0L6.75 8.25M3 12h18\'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -48,6 +48,11 @@
     padding: 15px 20px;
     border-radius: 8px;
 }
+#navContainer button:hover{
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
 #navContainer nav button:hover{
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
     color: black;
@@ -81,7 +86,7 @@ header > div{
     background-color: #0B8891;
     color: #D9D9D9;
 }
-#headTop button:hover{
+button:hover{
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -99,16 +104,19 @@ header > div{
     color: #5E5E5E;
     padding: 0 20px;
     height: 30px;
+    margin-right: auto;
 }
 
 /* Select */
 .inactivo{
     background-color: #0B8891;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23D9D9D9' viewBox='0 0 24 24'%3E%3Cpath d='m19.5 8.25-7.5 7.5-7.5-7.5'/%3E%3C/svg%3E");
     width: 30px;
     background-position: center;
 }
 .activo{
     background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%230B8891'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5'/%3E%3C/svg%3E");
     outline: 1px solid #0B8891;
     width: 300px;
     background-position: 3px center;
@@ -124,7 +132,6 @@ header > div{
     color: #5E5E5E;
     transition: width 0.3s ease;
     cursor: pointer;
-    background-image: url("/heroicons-master/optimized/24/solid/chevron-down.svg");
     background-repeat: no-repeat;
 }
 .select p{
@@ -173,4 +180,10 @@ header > div{
 .marcado{
     margin: 10px;
     color: black;
+}
+
+#headBot > button{
+    width: 40px;
+    background: none;
+    border-radius: 8px;
 }

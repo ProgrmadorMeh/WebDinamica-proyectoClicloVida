@@ -17,12 +17,12 @@ btnOcultar.addEventListener("click", () => {
         navCont.style.width = "fit-content";
         navCont.style.minWidth = "0px";
         navCont.querySelector("#navDesaparece").style.display = "none";
-        btnOcultar.style.backgroundImage = "url(heroicons-master/optimized/24/outline/arrow-long-right.svg)";
+        btnOcultar.style.backgroundImage = 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke-width=\'1.5\' stroke=\'black\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3\'/%3E%3C/svg%3E")';
     }else{
         navCont.querySelector("#navDesaparece").style.display = "block";
         navCont.style.width = "25%";
         navCont.style.minWidth = "300px";
-        btnOcultar.style.backgroundImage = "url(heroicons-master/optimized/24/outline/arrow-long-left.svg)";
+        btnOcultar.style.backgroundImage = 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke-width=\'1.5\' stroke=\'black\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M6.75 15.75L3 12m0 0L6.75 8.25M3 12h18\'/%3E%3C/svg%3E")';
     }
 });
 
