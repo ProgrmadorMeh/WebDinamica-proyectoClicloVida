@@ -33,11 +33,20 @@ app.listen(port, () => {
 });
 
 
-// usar la API
-fetch('https://tu-backend-railway-url/api/data')
-  .then(res => res.json())
-  .then(data => {
-    console.log(data);
-    // Aquí manipulas la data en tu web
-  })
-  .catch(err => console.error(err));
+app.get('/api/tabla/:nombre', async (req, res) => {
+  const nombreTabla = req.params.nombre;
+
+  // Aquí deberías validar nombreTabla para evitar SQL Injection
+  const tablasPermitidas = ['usuarios', 'productos', 'ordenes']; // ejemplo, pon tus tablas aquí
+  if (!tablasPermitidas.includes(nombreTabla)) {
+    return res.status(400).send('Tabla no permitida');
+  }
+
+  try {
+    const [rows] = await connection.query(`SELECT * FROM \`${nombreTabla}\``);
+    res.json(rows);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error consultando la tabla');
+  }
+});
