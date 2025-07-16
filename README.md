@@ -9,6 +9,12 @@
   <li><a href="https://drive.google.com/file/d/1Ax1iq7NmbN6hRaJvIiHKaN5zU3yJDvU2/view?usp=share_link">Diagrama de clases</li>
   <li><a href="https://drive.google.com/file/d/1O_FlUj313JuLiS3pIgKOLr3nWP52jzde/view?usp=share_link">Diagrama de flujo</li>
 </ul>
+    <h3>Documentos</h3>
+    <ul>
+      <li><a href= "https://drive.google.com/file/d/1C8UyxweIn2f8c49drbDNq8-JoTU7VNKs/view?usp=share_link"></a></li>
+      <li><a href= "https://drive.google.com/file/d/1Ax1iq7NmbN6hRaJvIiHKaN5zU3yJDvU2/view?usp=share_link"></a></li>
+      <li><a href= "https://drive.google.com/file/d/1O_FlUj313JuLiS3pIgKOLr3nWP52jzde/view?usp=share_link"></a></li>
+    </ul>
   <h2>Conectar mediante mysql Workbench</h2>
   <div>
     Usar los datos de la URL:
