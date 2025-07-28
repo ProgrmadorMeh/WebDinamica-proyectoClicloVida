@@ -2,39 +2,45 @@
 @import url("css/global.css");
 
 /* Nav */
+    /* Container */
 #navContainer{
     display: flex;
     flex-direction: column;
     text-align: center;
     background: linear-gradient(to top, rgba(40,40,40,0.8),rgba(131,131,131,0.5));
     background-color: rgba(0, 238, 255, 0.5);
-    width: 25%;
-    min-width: 300px;
-    height: 100%;
+    min-height: 100%;
     padding: 10px 20px;
+    width: fit-content;
+}
+#navDesaparece{
+    width: 25vw; min-width: 300px;
+}
+#navContainer button{
+    border-radius: 8px;
+}
+#navContainer button:hover{
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+    color: black;
 }
 
+    /* boton para el contenido del container del nav */
 #btn-ocultar{
     background: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke-width=\'1.5\' stroke=\'black\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M6.75 15.75L3 12m0 0L6.75 8.25M3 12h18\'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    border-radius: 8px;
+    background-repeat: no-repeat; background-size: contain; background-position: center;
     width: 60px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-
+    /* Titulo del nav */
 #navContainer h2{
     font-family: "Aldrich-Regular", sans-serif;
     font-size: 2.5em;
     margin: 5px 0 20px 0;
 }
 
+    /* Nav */
 #navContainer nav{
     display: flex;
     flex-direction: column;
@@ -46,21 +52,16 @@
     background-color: #D9D9D9;
     width: 100%;
     padding: 15px 20px;
-    border-radius: 8px;
 }
-#navContainer button:hover{
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-
-#navContainer nav button:hover{
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+.marcado{
+    margin: 10px;
     color: black;
 }
+/*___________________________*/
 
-/* Main */
 main{
-    width: 100%;
+    flex: 1;
+    height: fit-content;
 }
 
 /* Header */
@@ -182,6 +183,47 @@ button:hover{
     color: black;
 }
 
+#headBot > button{
+    width: 40px;
+    background: none;
+    border-radius: 8px;
+}
+
+
+
+/* Tabla */
+#section-output{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    padding: 30px 40px;
+
+}
+
+table{
+    background-color: #D9D9D9;
+    margin: 0;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+table td{
+    border: #A0B9BB 1px solid;
+}
+
+thead{
+    background-color: #0B8891;
+    color: #D9D9D9;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+table th, table td{
+    padding: 10px;
+}
+/* Clases para js */
 #headBot > button{
     width: 40px;
     background: none;
